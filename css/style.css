@@ -14,7 +14,7 @@ main{
 nav{
     position: sticky;
     top:0;
-    background:linear-gradient(to right, rgba(255, 255, 255, 0.645));
+    background:linear-gradient(to right, rgba(255, 255, 255, 0.929));
     padding:0px 32px 0px 100px;
     display: flex;
     justify-content: space-between;
@@ -204,4 +204,28 @@ main .detail .contact,main .detail a:hover{
 }
 .image{
     position: relative;
+}
+
+footer{
+    background:#432d1d;
+    padding:16px 40px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+.icon li{
+    list-style-type: none;
+    font-size:32px ;
+    width: 60px;
+}
+.icon li i{
+    color:white;
+}
+.icon li i:hover{
+    color:rgb(216, 215, 215)
 }
