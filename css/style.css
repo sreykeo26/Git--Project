@@ -2,13 +2,25 @@
     margin: 0;padding: 0;
     font-family: 'poppings',sans-serif;
 }
+body{
+    background-image: url(../photo/coffee1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo img{
+    width: 80px;
+    border-radius: 100%;
+}
 nav{
-    background:linear-gradient(to right, #3e2c1f86,#6f4e3774);
-    padding:0px 32px;
+    position: sticky;
+    top:0;
+    background:linear-gradient(to right, rgba(255, 255, 255, 0.645));
+    padding:0px 32px 0px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    scroll-behavior: smooth;
+    z-index: 100;
 }
 .nav-right{
     display: flex;
@@ -28,10 +40,10 @@ nav{
     padding:24px 24px;
     position: relative;
     font-weight: bold;
-    color:white
+    color:#6F4E37;
 }
 .navbar a:hover{
-    color :#3e2c1f;
+    color :#432d1d;
 }
 .navbar a:hover::after{
     content: '';
@@ -50,4 +62,73 @@ nav{
     100%{
         width: 100%;
     }
+}
+nav .profile i{
+    font-size: 48px;
+    color:#6F4E37 ;
+}
+
+main{
+    color:white;
+    padding: 56px;
+}
+.detail{
+    border-radius: 30% 70% 67% 33% / 43% 27% 73% 57% ;
+    background-color: rgba(90, 86, 86, 0.542);
+    width: 40%;
+    line-height: 40px;
+    padding:100px 32px 32px 64px;
+    height: 400px;
+}
+main .detail h1{
+    color:#ff6a00;
+    font-size:48px;
+    margin-bottom: 24px;
+}
+main .detail h2{
+    color:#ececec;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+main .detail p{
+    margin-bottom: 16px;
+}
+main .detail .btn{
+    /* background: #000; */
+    width: 50%;
+    justify-content: space-around;
+    display: flex;
+}
+main .detail a,main .detail .contact:hover{
+    padding:4px 24px;
+    background-color:#432d1d;
+    /* border:solid; */
+    border-radius: 32px;
+    color:white;
+    text-decoration: none;
+    border:solid #432d1d 0.5px;
+}
+main .detail .contact,main .detail a:hover{
+    border: solid .5px;
+    background: none;
+    color:white;
+}
+.menu{
+    background: rgb(16, 16, 16);
+    text-align: center;
+    color :white;
+    padding:64px
+}
+.menu .drink{
+    margin-top: 64px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:16px;
+}
+.menu .drink .card{
+    align-content: center;
+}
+.menu .drink .card img{
+    width: 200px;
 }
