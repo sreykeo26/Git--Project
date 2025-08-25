@@ -1,53 +1,80 @@
- body {
-     font-family: Arial, sans-serif;
-     margin: 0;
-     padding: 0;
- }
- 
- header {
-     background: #4b2e2e;
-     color: #fff;
-     padding: 1rem;
-     text-align: center;
- }
- 
- nav a {
-     color: #fff;
-     margin: 0 15px;
-     text-decoration: none;
- }
- 
- .hero {
-     background: url('coffee-banner.jpg') center/cover;
-     color: #fff;
-     text-align: center;
-     padding: 80px 20px;
- }
- 
- .hero h1 {
-     font-size: 3rem;
- }
- 
- .section {
-     padding: 50px 20px;
-     text-align: center;
- }
- 
- .menu-grid {
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-     gap: 20px;
- }
- 
- .card {
-     border: 1px solid #ddd;
-     padding: 15px;
-     border-radius: 10px;
- }
- 
- footer {
-     background: #4b2e2e;
-     color: #fff;
-     text-align: center;
-     padding: 20px;
- }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppings', sans-serif;
+}
+
+body {
+    background-image: url(../photo/coffee1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo img {
+    width: 80px;
+    border-radius: 100%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.645));
+    padding: 0px 32px 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    scroll-behavior: smooth;
+    z-index: 100;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.navbar {
+    width: 80%;
+    display: flex;
+    gap: 56px;
+    flex-direction: row;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 24px 24px;
+    position: relative;
+    font-weight: bold;
+    color: #6F4E37;
+}
+
+.navbar a:hover {
+    color: #432d1d;
+}
+
+.navbar a:hover::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #6F4E37, rgb(186, 145, 115));
+    animation: fillColor ease 1s;
+}
+
+@keyframes fillColor {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+nav .profile i {
+    font-size: 48px;
+    color: #6F4E37;
+}
