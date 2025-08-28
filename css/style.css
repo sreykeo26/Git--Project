@@ -71,6 +71,14 @@ nav {
     animation: fillColor ease 1s;
 }
 
+section.services h2 {
+    text-align: center;
+}
+
+section.why-us h2 {
+    text-align: center;
+}
+
 @keyframes fillColor {
     0% {
         width: 0%;
