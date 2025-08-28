@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "poppings", sans-serif;
 }
 main {
@@ -245,6 +246,7 @@ ul {
   nav {
     width: 100%;
     padding: 4px;
+    
   }
   main {
     width: 100%;
@@ -262,15 +264,15 @@ ul {
     background-color: #432d1d;
     width: 100%;
   }
-  .nav-right {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
   .navbar {
-    display: flex;
-    gap:12px;
+    font-size: 8px;
+    display:flex;
+    gap:4px;
     flex-direction: row;
+    background-color: green;
+  }
+  .detail h1{
+    display: none;
   }
   .drink{
     display: none;
