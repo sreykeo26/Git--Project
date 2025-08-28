@@ -1,4 +1,5 @@
 * {
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -68,155 +69,249 @@ nav {
 nav .profile i {
   font-size: 48px;
   color: #6f4e37;
+=======
+    margin: 0;
+    padding: 0;
+    font-family: "poppings", sans-serif;
+>>>>>>> 288cbc4b21cee2a2690f3c5e1d5329643c18deae
 }
 
 main {
-  color: white;
-  padding: 56px;
-}
-.detail {
-  border-radius: 30% 70% 67% 33% / 43% 27% 73% 57%;
-  background-color: rgba(90, 86, 86, 0.542);
-  width: 40%;
-  line-height: 40px;
-  padding: 100px 32px 32px 64px;
-  height: 400px;
-}
-main .detail h1 {
-  color: #ff6a00;
-  font-size: 48px;
-  margin-bottom: 24px;
-}
-main .detail h2 {
-  color: #ececec;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-main .detail p {
-  margin-bottom: 16px;
-}
-main .detail .btn {
-  /* background: #000; */
-  width: 50%;
-  justify-content: space-around;
-  display: flex;
-}
-main .detail a,
-main .detail .contact:hover {
-  padding: 4px 24px;
-  background-color: #432d1d;
-  /* border:solid; */
-  border-radius: 32px;
-  color: white;
-  text-decoration: none;
-  border: solid #432d1d 0.5px;
-}
-main .detail .contact,
-main .detail a:hover {
-  border: solid 0.5px;
-  background: none;
-  color: white;
-}
-.menu {
-  background: rgb(16, 16, 16);
-  text-align: center;
-  color: white;
-  padding: 64px;
-}
-.menu .drink {
-  margin-top: 64px;
-  height: 600px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
-}
-.menu .drink .card {
-  /* background-color: gray; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-.menu .drink .text {
-  justify-self: end;
-  /* background-color: pink; */
-  align-content: end;
-}
-.menu .drink .card img {
-  /* background-color: aqua; */
-  width: 200px;
-}
-.third {
-  padding: 40px;
-  text-align: center;
-}
-.testimonials {
-  margin-top: 32px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  padding: 24px;
-}
-.testimonials .cardProfile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
-  flex-direction: column;
-}
-.third h1 {
-  font-size: 40px;
-  color: #432d1d;
-}
-.cardProfile .text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  line-height: 24px;
-}
-.cardProfile img {
-  width: 200px;
-  border: solid #432d1d;
-  border-radius: 65% 35% 63% 37% / 30% 30% 70% 70%;
-  margin-bottom: 24px;
-  box-shadow: 4px 4px 20px #6f4e37;
-}
-.cardProfile img:hover {
-  /* -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%); */
-  box-shadow: 4px 4px 20px aquamarine;
-}
-.cardProfile .image::after {
-  --angle: 0deg;
-  content: "";
-  width: 100%;
-  position: absolute;
-  height: 90%;
-  background: conic-gradient(
-    from 80deg,
-    #e81416,
-    #ffa500,
-    #faeb36,
-    #79c314,
-    #487de7,
-    #4b369d,
-    #70369d
-  );
-  top: 0;
-  left: 0;
-  border-radius: 65% 35% 63% 37% / 30% 30% 70% 70%;
-  z-index: -1;
-  animation: spin 4s infinite ease-in-out;
-}
-.cardProfile .image:hover::after {
-  animation: none;
-}
-.image {
-  position: relative;
+    background-image: url(../photo/coffee1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-footer {
+.logo img {
+    width: 80px;
+    border-radius: 100%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.929));
+    padding: 0px 32px 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    scroll-behavior: smooth;
+    z-index: 100;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.navbar {
+    width: 80%;
+    display: flex;
+    gap: 56px;
+    flex-direction: row;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 16px 24px;
+    position: relative;
+    font-weight: bold;
+    color: #6f4e37;
+}
+
+.navbar a:hover {
+    color: #432d1d;
+}
+
+.navbar a:hover::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #6f4e37, rgb(186, 145, 115));
+    animation: fillColor ease 1s;
+}
+
+@keyframes fillColor {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+nav .profile i {
+    font-size: 48px;
+    color: #6f4e37;
+}
+
+main {
+    color: white;
+    padding: 56px;
+}
+
+.detail {
+    border-radius: 30% 70% 67% 33% / 43% 27% 73% 57%;
+    background-color: rgba(90, 86, 86, 0.542);
+    width: 40%;
+    line-height: 40px;
+    padding: 100px 32px 32px 64px;
+    height: 400px;
+}
+
+main .detail h1 {
+    color: #ff6a00;
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+main .detail h2 {
+    color: #ececec;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main .detail p {
+    margin-bottom: 16px;
+}
+
+main .detail .btn {
+    /* background: #000; */
+    width: 50%;
+    justify-content: space-around;
+    display: flex;
+}
+
+main .detail a,
+main .detail .contact:hover {
+    padding: 4px 24px;
+    background-color: #432d1d;
+    /* border:solid; */
+    border-radius: 32px;
+    color: white;
+    text-decoration: none;
+    border: solid #432d1d 0.5px;
+}
+
+main .detail .contact,
+main .detail a:hover {
+    border: solid 0.5px;
+    background: none;
+    color: white;
+}
+
+.menu {
+    background: rgb(16, 16, 16);
+    text-align: center;
+    color: white;
+    padding: 64px;
+}
+
+.menu .drink {
+    margin-top: 64px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.menu .drink .card {
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu .drink .text {
+    justify-self: end;
+    /* background-color: pink; */
+    align-content: end;
+}
+
+.menu .drink .card img {
+    /* background-color: aqua; */
+    width: 200px;
+}
+
+.third {
+    padding: 40px;
+    text-align: center;
+}
+
+.testimonials {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 24px;
+}
+
+.testimonials .cardProfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    flex-direction: column;
+}
+
+.third h1 {
+    font-size: 40px;
+    color: #432d1d;
+}
+
+.cardProfile .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+}
+
+.cardProfile img {
+    width: 200px;
+    border: solid #432d1d;
+    border-radius: 65% 35% 63% 37% / 30% 30% 70% 70%;
+    margin-bottom: 24px;
+    box-shadow: 4px 4px 20px #6f4e37;
+}
+
+.cardProfile img:hover {
+    /* -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); */
+    box-shadow: 4px 4px 20px aquamarine;
+}
+
+.cardProfile .image::after {
+    --angle: 0deg;
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 90%;
+    background: conic-gradient( from 80deg, #e81416, #ffa500, #faeb36, #79c314, #487de7, #4b369d, #70369d);
+    top: 0;
+    left: 0;
+    border-radius: 65% 35% 63% 37% / 30% 30% 70% 70%;
+    z-index: -1;
+    animation: spin 4s infinite ease-in-out;
+}
+
+.cardProfile .image:hover::after {
+    animation: none;
+}
+
+.image {
+    position: relative;
+}
+
+
+/* footer {
   background: #432d1d;
   padding: 16px 40px;
   display: flex;
@@ -238,8 +333,10 @@ ul {
 }
 .icon li i:hover {
   color: rgb(216, 215, 215);
-}
+} */
+
 @media (max-width: 426px) {
+<<<<<<< HEAD
   body {
     background-color: pink;
   }
@@ -286,4 +383,50 @@ ul {
   footer{
     display: none;
   }
+=======
+    body {
+        background-color: pink;
+    }
+    nav {
+        width: 100%;
+        padding: 4px;
+    }
+    main {
+        width: 100%;
+        /* background:gray */
+    }
+    .profile {
+        display: none;
+    }
+    /* .drink {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  } */
+    .menu {
+        background-color: #432d1d;
+        width: 100%;
+    }
+    .nav-right {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .navbar {
+        display: flex;
+        gap: 12px;
+        flex-direction: row;
+    }
+    .drink {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .testimonials {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+>>>>>>> 288cbc4b21cee2a2690f3c5e1d5329643c18deae
 }
