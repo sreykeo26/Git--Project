@@ -271,6 +271,9 @@ ul {
     padding: 0;
     box-sizing: border-box;
   }
+  .detail p{
+    display: none ;
+  }
   nav {
     padding: 0px 4px 0px 10px;
   }
@@ -285,9 +288,8 @@ ul {
     width:80px;
   }
   .nav-right {
-    justify-content: start;
+    justify-content:end;
     align-items: center;
-    /* background-color: blue; */
     width:70%;
   }
   .navbar {
@@ -309,13 +311,11 @@ ul {
     width:100%;
     padding:64px 32px;
     line-height: 32px;
-    backdrop-filter: blur(.3rem); 
   }
   main .detail .btn {
     /* background: #000; */
-    width: 90%;
+    width: 100%;
     justify-content: space-around;
-    display: flex;
   }
 
   main .detail a,
@@ -401,22 +401,44 @@ ul {
 }
 @media (max-width:321px){
     .navbar a{
-    font-size: 12px;
-    width:30px
+    font-size: 10px;
+    width:10px;
+    /* background: #000; */
   }
   .testimonials::-webkit-scrollbar-button{
     display: none;
   }
+  .detail {
+    border-radius: 30% 70% 67% 33% / 43% 27% 73% 57%;
+    background-color: rgba(90, 86, 86, 0.542);
+    width: 50%;
+    line-height: 40px;
+    padding: 100px 32px 32px 64px;
+    height: 500px;
+  }
+
+  main .detail h1 {
+    color: #ff6a00;
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+
+  main .detail h2 {
+    color: #ececec;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  main .detail p {
+    margin-bottom: 16px;
+  }
+
   main .detail .btn {
-  /* background: #000; */
-  width: 78%;
-  justify-content: space-around;
-  display: flex;
-}
-main .detail a{
-  padding:2px 8px;
-  font-size: 12px;
-}
+    /* background: #000; */
+    width: 50%;
+    justify-content: space-around;
+    display: flex;
+  }
   i{
     font-size: 24px;
   }
@@ -452,21 +474,33 @@ main .detail a{
     background-position-y: -10px;
     padding :12px;
   }
-  .detail{
-    width:70%;
-    padding:79px 32px;
-    line-height: 32px;
-    backdrop-filter: blur(.3rem); 
+  .detail {
+    border-radius: 30% 70% 67% 33% / 43% 27% 73% 57%;
+    background-color: rgba(90, 86, 86, 0.542);
+    width: 50%;
+    line-height: 40px;
+    padding: 100px 32px 32px 64px;
+    height: 500px;
   }
+
+  main .detail h1 {
+    color: #ff6a00;
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+  main .detail p {
+    margin-bottom: 16px;
+  }
+
   main .detail .btn {
     /* background: #000; */
     width: 70%;
-    justify-content: space-around;
     display: flex;
   }
-  .detail p{
-    font-size: 16px;
+  .btn a{
+    font-size: 12px;
   }
+
 }
 @media(max-width:1024px){
   .nav-right {
@@ -496,7 +530,6 @@ main .detail a{
     width:70%;
     padding:80px 40px;
     line-height: 32px;
-    backdrop-filter: blur(.3rem); 
   }
   main .detail .btn {
     /* background: #000; */
