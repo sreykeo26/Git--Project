@@ -409,3 +409,61 @@ ul {
 .pulse {
     animation: pulse 2s infinite;
 }
+
+@media (max-width: 992px) {
+    nav {
+        padding: 10px 20px;
+    }
+    .nav-right {
+        width: 70%;
+        gap: 20px;
+    }
+    .navbar {
+        gap: 30px;
+    }
+    .hero h1 {
+        font-size: 40px;
+    }
+    .hero p {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+    .service-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 30px;
+    }
+    .why-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .why-card {
+        width: 200px;
+    }
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        margin: 10px auto;
+        width: 80%;
+    }
+    .contact-image img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-right,
+    .navbar {
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+    }
+    .contact-container img {
+        width: 100%;
+        height: auto;
+    }
+}
