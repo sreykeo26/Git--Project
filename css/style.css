@@ -240,7 +240,7 @@ card1 {
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     animation: fadeIn 2s ease;
 }
 
@@ -250,7 +250,10 @@ card1 {
     border: 2px solid #ddd;
     font-size: 16px;
     outline: none;
-    transition: border-color 0.3s ease;
+    height: 50px;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 20px;
 }
 
 .contact-form input:focus,
@@ -268,6 +271,7 @@ card1 {
     min-width: 250px;
     text-align: left;
     animation: fadeIn 3s ease;
+    margin-top: 30px;
 }
 
 .contact-info h3 {
@@ -284,11 +288,16 @@ card1 {
     color: #6F4E37;
 }
 
+.contact-info.fade-in-delay2 h3 {
+    animation: fadeIn 4s ease;
+}
+
 .contact-image img {
     display: flex;
     align-self: start;
     width: 30%;
     border-radius: 8px;
+    height: 300px;
 }
 
 .contact-info i {
@@ -300,6 +309,7 @@ card1 {
     margin-top: 20px;
     display: flex;
     gap: 15px;
+    margin-left: 40px;
 }
 
 .social-icons a {
